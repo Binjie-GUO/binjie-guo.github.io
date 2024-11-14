@@ -1,1 +1,64 @@
- 
+:root {
+  /* 新的配色方案 */
+  --theme: #f8f9fa;
+  --primary: #2c3e50;
+  --secondary: #3498db; 
+  --accent: #e74c3c;
+  
+  /* 更现代的字体 */
+  --font-main: 'Source Sans Pro', sans-serif;
+  --font-code: 'Fira Code', monospace;
+}
+
+/* 新的卡片式文章列表样式 */
+.post-entry {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: transform 0.2s;
+}
+
+.post-entry:hover {
+  transform: translateY(-4px);
+} 
+
+.lang-switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+.lang-icon {
+    font-size: 1.2rem;
+} 
+
+[data-lang="zh"] {
+    display: none;
+}
+
+.lang-zh [data-lang="en"] {
+    display: none;
+}
+
+.lang-zh [data-lang="zh"] {
+    display: block;
+} 
