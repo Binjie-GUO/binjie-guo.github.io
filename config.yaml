@@ -1,0 +1,10 @@
+title: "Elixir Blog"
+baseURL: "https://your-domain.com"
+languageCode: "zh-cn"
+
+params:
+  author: "Elixir"
+  description: "AI+生物医药与制造业R&D的技术分享"
+  email: "your-email@domain.com"
+  github: "your-github"
+  linkedin: "your-linkedin" 
